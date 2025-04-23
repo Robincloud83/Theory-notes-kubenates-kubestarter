@@ -1,0 +1,6 @@
+end=$((SECONDS+120))
+while [ $SECONDS -lt $end ]; do
+  curl -s http://localhost:80 > /dev/null
+  echo "Hit at $(date)"
+done
+
